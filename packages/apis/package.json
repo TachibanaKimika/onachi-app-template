@@ -1,0 +1,39 @@
+{
+  "name": "@packages/apis",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "index.ts",
+    "src/**",
+    "dist/**"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./*": {
+      "import": "./dist/*.js",
+      "require": "./dist/*.cjs"
+    }
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "dev:test": "vitest --ui",
+    "build:pack": "vite build",
+    "clean": "rimraf dist build",
+    "clean:all": "rimraf dist .wireit .turbo build",
+    "clean:node_modules": "rm -rf node_modules",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.1"
+}

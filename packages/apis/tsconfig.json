@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "baseUrl": "./",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "strict": false,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "types": ["node", "vitest/globals"],
+    "paths": {
+      "~/*": ["src/*"],
+    }
+  },
+  "include": ["src", "scripts"]
+}

@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "experimentalDecorators": true,
+      "jsx": "react",
+      "target": "es2022",
+      "module": "esnext",
+      "types": ["vitest/globals"]
+    },
+  }

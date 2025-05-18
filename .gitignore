@@ -1,0 +1,17 @@
+node_modules
+dist
+
+.turbo
+
+.static
+
+# mongodb dump data
+.dump
+
+.env
+
+.log
+
+logs
+
+*/logs/*.log

@@ -1,0 +1,40 @@
+{
+  "name": "onachi-app-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "cross-env DOCKER_BUILDKIT=0 docker build . -t onachi/app-template",
+    "lint": "eslint . --fix --quiet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@vitest/ui": "^3.0.9",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "turbo": "^1.13.3",
+    "typescript": "5.2.2",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0",
+    "vitest": "^3.0.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
